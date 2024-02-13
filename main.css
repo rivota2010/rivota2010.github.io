@@ -1,34 +1,35 @@
+/* Navigation Menu Styling */
 ul {
-    
-    list-style-type: none;
-    margin: 0;
-    padding: 0; /* is the space between and around the list items */
-    overflow: hidden;
-    background-color: #333 ;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; /* Space between and around the list items */
+  overflow: hidden;
+  background-color: #333;
 }
 
 li {
-    float: left;/*aligns the list items horizontally */
+  float: left; /* Aligns the list items horizontally */
 }
 
-li a {/*li a is the link inside the list item */
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+li a { /* Link inside the list item */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-li a:hover {/*effect when the mouse is over the link */
-    background-color: #111;
+li a:hover { /* Effect when the mouse is over the link */
+  background-color: #111;
 }
 
+/* Footer Styling */
 .site-footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 20px 0;
-  margin-top: 40px; /* Adds space between the content and footer */
+  margin-top: 40px; /* Space between the content and footer */
 }
 
 .footer-content p, .footer-content a {
@@ -42,54 +43,51 @@ li a:hover {/*effect when the mouse is over the link */
 }
 
 .social-links a {
-  padding: 0 10px; /* Adds horizontal padding for better spacing between links */
+  padding: 0 10px; /* Horizontal padding for better spacing between links */
 }
 
-
-/*-----------------------Home page styling------------------*/
-
+/* Home Page Styling */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 .Home-container {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  height: 100vh;
 }
 
 .left-column {
-    flex-basis: 70%;
-    background: #f0f0f0; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  flex-basis: 70%;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .left-column img {
-    max-width: 70%;
-    height: auto;
-    border-right: 2px solid #ccc; 
+  max-width: 70%;
+  height: auto;
+  border-right: 2px solid #ccc;
 }
 
 .right-column {
-    flex-basis: 50%;
-    background: #fff;
-    padding: 20px;
+  flex-basis: 50%;
+  background: #fff;
+  padding: 20px;
 }
 
 .profile-header h1 {
-    color: #000000; 
-    margin: 0 0 10px 0;
+  color: #000000;
+  margin: 0 0 10px 0;
 }
 
-/*-----------------------------------Interest page styling------------------------------------------------------------- */
-
+/* Interest Page Styling */
 .interest-section {
   text-align: center;
-  background-color: #e0e0e0; 
+  background-color: #e0e0e0;
   color: #333;
   padding: 40px 0;
 }
@@ -99,7 +97,7 @@ body, html {
   flex-direction: column; /* Align items vertically */
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Adds space between the boxes */
+  gap: 20px; /* Space between the boxes */
 }
 
 .interest-detail {
@@ -107,159 +105,138 @@ body, html {
   padding: 20px;
   border-radius: 10px;
   display: flex;
-  flex-direction: row; /* Aligns the content and image side by side */
+  flex-direction: row; /* Content and image side by side */
   justify-content: space-between;
-  width: 80%; /* Adjust the width as needed */
-  max-width: 800px; /* Maximum width */
+  width: 80%;
+  max-width: 800px;
 }
 
 .info {
   flex: 1;
-  text-align: left; /* Aligns the text to the left */
+  text-align: left;
 }
 
 .image {
   flex: 1;
-  text-align: right; /* Aligns the image to the right */
+  text-align: right;
 }
 
 .interest-detail img {
-  width: 50%; /* Adjust the image width as needed */
+  width: 50%;
   height: auto;
-  margin-left: 20px; /* Adds some space between the text and the image */
+  margin-left: 20px;
 }
 
 .interest-detail a {
-  background-color: #000000; /* Button background color */
-  color: white; /* Text color */
-  padding: 10px 20px; /* Top and bottom padding, left and right padding */
-  text-decoration: none; /* Removes underline from links */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-  display: inline-block; /* Allows the use of padding and width */
-  margin-top: 10px; /* Extra space above the button */
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .interest-detail a:hover {
-  background-color: #3658a7; /* Darker shade on hover for feedback */
-  color: #ffffff; /* Keeps text color white on hover */
+  background-color: #3658a7;
+  color: #ffffff;
 }
 
-
-
-@media (max-width: 768px) {
-  .interest-detail {
-    flex-direction: column; /* Stacks the content vertically on smaller screens */
-  }
-
-  .interest-detail img {
-    margin-left: 0;
-    margin-top: 20px; /* Adds space between the text and the image */
-    width: 80%; /* Adjust the image width on smaller screens */
-  }
-}
-
-/*----------------------------------Contact Information Page------------------------------------*/
-
+/* Contact Information Page Styling */
 .contact-section {
-    text-align: center;
-    background-color: #e0e0e0;
-    color: #333; /* Darker text for readability */
-    padding: 40px 0;
-  }
-  
-  .contact-section h2, .contact-section p {
-    margin: 0 0 30px;
-  }
-  
-  .contact-details {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch; /* This will ensure that the items stretch to fill the container */
-    flex-wrap: wrap;
-    gap: 20px; /* This adds space between the flex items */
-  }
-  
-  .contact-detail {
-    flex: 1; /* This allows the boxes to grow and ensures they take up equal width */
-    min-width: 250px; /* Minimum width for each box */
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* This will push the content to the top and bottom of the card */
-  }
-  
-  .contact-detail h3 {
-    margin-bottom: 10px;
-  }
-  
-  .contact-detail p {
-    flex-grow: 1; /* This will make the paragraph take up any available space */
-    font-size: 0.9em;
+  text-align: center;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 40px 0;
+}
+
+.contact-section h2, .contact-section p {
+  margin: 0 0 30px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-detail {
+  flex: 1;
+  min-width: 250px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-detail h3 {
+  margin-bottom: 10px;
+}
+
+.contact-detail p {
+  flex-grow: 1;
+  font-size: 0.9em;
+}
+
+.contact-detail img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Neuromorphic Styling */
+.neuro-detail {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.neuro-detail .image {
+  width: 50%;
+  height: auto;
+  margin-left: 20px;
+}
+
+/* General Image Style Improvements */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsive Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+  .interest-detail, .neuro-detail {
+      flex-direction: column;
   }
 
-  .contact-detail img {
-    width: 100px; /* Adjust the size as needed */
-    height: auto;
-    display: block; /* Makes the image a block to center it using margin */
-    margin: 0 auto 10px; /* Centers the image and adds space below */
+  .interest-detail img, .neuro-detail img, .contact-detail img {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
-  
-  
-  
-  /* Responsive adjustments */
-  @media (max-width: 1024px) {
-    .contact-details {
-      gap: 10px;
-    }
-    .contact-detail {
-      min-width: 200px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .contact-details {
+
+  .contact-details {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .contact-detail {
-      width: 80%; /* Full width on smaller screens */
-      min-width: 0; /* Reset the min-width for small screens */
-    }
-  }
-  
-  
-  /*----------------------------------Neuromorphic------------------------------------*/
-  .neuro-detail {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column; /* Aligns the content and image side by side */
-    justify-content: space-between;
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto; /* Centers the detail box */
   }
 
-  /*make image center*/
-  .neuro-detail .image {
-    width: 50%; /* Adjust the image width as needed */
-    height: auto;
-    margin-left: 20px; /* Adds some space between the text and the image */
+  .contact-detail {
+      width: 90%;
+      min-width: 0;
   }
-  
-  @media (max-width: 768px) {
-    .neuro-detail {
-      flex-direction: column; /* Stacks the content vertically on smaller screens */
-    }
-  
-    .neuro-detail img {
-      margin-left: 0;
-      margin-top: 20px; /* Adds space between the text and the image */
-      width: 80%; /* Adjusts the image width on smaller screens */
-    }
-  }
+}
