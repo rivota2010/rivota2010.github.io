@@ -250,8 +250,6 @@ body, html {
     width: 100%; /* Adjust the image width as needed */
     height: auto;
     margin-left: 20px; /* Adds some space between the text and the image */
-    align-items: center;
-    justify-content: center;
   }
   
   @media (max-width: 768px) {
