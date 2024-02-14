@@ -245,12 +245,18 @@ body, html {
     margin: 20px auto; /* Centers the detail box */
   }
 
-  /*make image center*/
   .neuro-detail .image {
-    width: 100%; /* Adjust the image width as needed */
-    height: auto;
-    margin-left: 20px; /* Adds some space between the text and the image */
-  }
+  display: flex; /* Establishes this container as a flex container */
+  align-items: center; /* Centers the image vertically */
+  justify-content: center; /* Centers the image horizontally */
+  height: 100%; /* You might need to adjust this value */
+  width: 100%; /* Ensures the container takes full width */
+}
+
+.neuro-detail img {
+  max-width: 100%; /* Ensures the image is responsive and does not overflow its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
   
   @media (max-width: 768px) {
     .neuro-detail {
