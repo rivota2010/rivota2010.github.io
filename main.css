@@ -154,7 +154,7 @@ body, html {
 
   .interest-detail img {
     margin-left: 0;
-    margin-top: 30px; /* Adds space between the text and the image */
+    margin-top: 20px; /* Adds space between the text and the image */
     width: 100%; /* Adjust the image width on smaller screens */
   }
 }
@@ -259,7 +259,7 @@ body, html {
   
     .neuro-detail img {
       margin-left: 0;
-      margin-top: 30px; /* Adds space between the text and the image */
+      margin-top: 20px; /* Adds space between the text and the image */
       width: 100%; /* Adjusts the image width on smaller screens */
     }
   }
