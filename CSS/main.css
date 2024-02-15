@@ -1,0 +1,271 @@
+ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0; /* is the space between and around the list items */
+    overflow: hidden;
+    background-color: #333 ;
+}
+
+li {
+    float: left;/*aligns the list items horizontally */
+}
+
+li a {/*li a is the link inside the list item */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {/*effect when the mouse is over the link */
+    background-color: #111;
+}
+
+.site-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px; /* Adds space between the content and footer */
+}
+
+.footer-content p, .footer-content a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.footer-content a:hover {
+  color: #ddd; /* Lightens the link color on hover for visual feedback */
+}
+
+.social-links a {
+  padding: 0 10px; /* Adds horizontal padding for better spacing between links */
+}
+
+
+/*-----------------------Home page styling------------------*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+.Home-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-column {
+    flex-basis: 70%;
+    background: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-column img {
+    max-width: 70%;
+    height: auto;
+    border-right: 2px solid #ccc; 
+}
+
+.right-column {
+    flex-basis: 50%;
+    background: #fff;
+    padding: 20px;
+}
+
+.profile-header h1 {
+    color: #000000; 
+    margin: 0 0 10px 0;
+}
+
+/*-----------------------------------Interest page styling------------------------------------------------------------- */
+
+.interest-section {
+  text-align: center;
+  background-color: #e0e0e0; 
+  color: #333;
+  padding: 40px 0;
+}
+
+.interest-details {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adds space between the boxes */
+}
+
+.interest-detail {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row; /* Aligns the content and image side by side */
+  justify-content: space-between;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 800px; /* Maximum width */
+}
+
+.info {
+  flex: 1;
+  text-align: left; /* Aligns the text to the left */
+}
+
+.image {
+  flex: 1;
+  text-align: right; /* Aligns the image to the right */
+}
+
+.interest-detail img {
+  width: 100%; /* Adjust the image width as needed */
+  height: auto;
+  margin-left: 20px; /* Adds some space between the text and the image */
+}
+
+.interest-detail a {
+  background-color: #000000; /* Button background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Top and bottom padding, left and right padding */
+  text-decoration: none; /* Removes underline from links */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  display: inline-block; /* Allows the use of padding and width */
+  margin-top: 10px; /* Extra space above the button */
+}
+
+.interest-detail a:hover {
+  background-color: #3658a7; /* Darker shade on hover for feedback */
+  color: #ffffff; /* Keeps text color white on hover */
+}
+
+
+
+@media (max-width: 768px) {
+  .interest-detail {
+    flex-direction: column; /* Stacks the content vertically on smaller screens */
+  }
+
+  .interest-detail img {
+    margin-left: 0;
+    margin-top: 20px; /* Adds space between the text and the image */
+    width: 100%; /* Adjust the image width on smaller screens */
+  }
+}
+
+/*----------------------------------Contact Information Page------------------------------------*/
+
+.contact-section {
+    text-align: center;
+    background-color: #e0e0e0;
+    color: #333; /* Darker text for readability */
+    padding: 40px 0;
+  }
+  
+  .contact-section h2, .contact-section p {
+    margin: 0 0 30px;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* This will ensure that the items stretch to fill the container */
+    flex-wrap: wrap;
+    gap: 20px; /* This adds space between the flex items */
+  }
+  
+  .contact-detail {
+    flex: 1; /* This allows the boxes to grow and ensures they take up equal width */
+    min-width: 250px; /* Minimum width for each box */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will push the content to the top and bottom of the card */
+  }
+  
+  .contact-detail h3 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-detail p {
+    flex-grow: 1; /* This will make the paragraph take up any available space */
+    font-size: 0.9em;
+  }
+
+  .contact-detail img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    display: block; /* Makes the image a block to center it using margin */
+    margin: 0 auto 10px; /* Centers the image and adds space below */
+  }
+  
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .contact-details {
+      gap: 10px;
+    }
+    .contact-detail {
+      min-width: 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-detail {
+      width: 100%; /* Full width on smaller screens */
+      min-width: 0; /* Reset the min-width for small screens */
+    }
+  }
+  
+  
+  /*----------------------------------Individual Interest Page------------------------------------*/
+  .IT-detail {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Aligns the content and image side by side */
+    justify-content: space-between;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto; /* Centers the detail box */
+  }
+
+  .IT-detail .image {
+  display: flex; /* Establishes this container as a flex container */
+  align-items: center; /* Centers the image vertically */
+  justify-content: center; /* Centers the image horizontally */
+  height: 100%; /* You might need to adjust this value */
+  width: 100%; /* Ensures the container takes full width */
+}
+
+.IT-detail img {
+  max-width: 100%; /* Ensures the image is responsive and does not overflow its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
+  
+  @media (max-width: 768px) {
+    .IT-detail {
+      flex-direction: column; /* Stacks the content vertically on smaller screens */
+    }
+  
+    .IT-detail img {
+      margin-left: 0;
+      margin-top: 20px; /* Adds space between the text and the image */
+      width: 100%; /* Adjusts the image width on smaller screens */
+    }
+  }
