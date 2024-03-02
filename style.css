@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    flex-direction: column; /* Changed to column to stack items vertically */
+    align-items: center;
+    height: auto; /* Changed from 100vh to auto to accommodate content length */
+    margin: 0; /* Reset default margin */
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+#titleContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Added space between the title and the board */
+}
+
+h1 {
+    font-family: 'Arial, sans-serif';
+    color: red;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0; /* Removes default margin from h1 */
+}
+
+#checkersBoard {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    margin-bottom: 20px; /* Space after the board */
+}
+
+#bombCursor {
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.airstrike-active {
+    cursor: none;
+}
+
+.king-piece {
+    background-color: gold;
+    border: 2px solid black;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+}
+
+.black {
+    background-color: #444;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.piece {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
+.red-piece {
+    background-color: red;
+}
+
+.black-piece {
+    background-color: rgb(59, 189, 212);
+    color: black;
+}
+
+.selected {
+    border: 2px solid yellow;
+}
+
+.kinged-piece {
+    border: 2px solid green;
+}
+
+.red-piece.kinged-piece {
+    border-color: blue;
+}
+
+.black-piece.kinged-piece {
+    border-color: purple;
+}
+
+.airstrike-counter {
+    font-size: 1.5em; /* Larger text */
+    color: #D32F2F; /* Red color for the red player */
+    text-shadow: 1px 1px 2px #000; /* Shadow for better visibility */
+    margin: 10px; /* Spacing around the element */
+    transition: all 0.3s ease; /* Smooth transition for changes */
+}
+
+.airstrike-counter.black {
+    color: #424242; /* Dark color for the black player */
+}
+
+/* Example of how you could animate the change in counter */
+.airstrike-counter.used {
+    transform: scale(0.9); /* Slightly scale down */
+    opacity: 0.5; /* Fade the number out */
+}
+
+
+
+
